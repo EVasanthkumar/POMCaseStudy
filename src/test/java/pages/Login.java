@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Login {
+	
 
-	@FindBy(className="ion-log-in")
+	@FindBy(xpath="//a[text()='Login']")
 	WebElement btnLogin;
 	
 	@FindBy(name="email")
@@ -18,6 +19,8 @@ public class Login {
 
 	@FindBy(xpath="//button[text()='Login']")
 	WebElement loginButton;
+
+	
 	
 	public Login(WebDriver driver) {
 		PageFactory.initElements(driver, this);

@@ -4,13 +4,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class commonUtils {
+public class Utils {
 	
 	public static String getConfigProperties(String value) throws IOException {
-		 FileReader red=new FileReader("C:\\workspace\\WebDriverLaunch\\src\\test\\resources\\config.Properties");
+		 FileReader red=new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
 		  Properties prop=new Properties();
 		  prop.load(red);
 		  return prop.getProperty(value);
+		
 	}
 
 }

@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		features = "src//test//resources//features//conduit.feature",
-		glue = {"stepDefination"},
+		glue = {"stepDefinations"},
 		dryRun=false,
 		monochrome=true,
 		plugin = {"pretty",
@@ -15,5 +15,7 @@ import io.cucumber.testng.CucumberOptions;
 	)
 
 public class TestRunner extends AbstractTestNGCucumberTests{
+	
+	
  
 }
